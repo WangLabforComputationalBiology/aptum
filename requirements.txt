@@ -1,0 +1,7 @@
+# Core reproduction (scripts/p4_matrix.py, reproduce_from_npz.py)
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+
+# Figure regeneration only
+matplotlib>=3.7

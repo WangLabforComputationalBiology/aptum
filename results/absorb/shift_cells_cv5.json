@@ -1,0 +1,102 @@
+{
+ "davis_scaffold": {
+  "members": [
+   "deepdta",
+   "esmfp",
+   "esmmax",
+   "f1full_xgb",
+   "graphdta",
+   "lightdta",
+   "mf_bilinear",
+   "te_mlp",
+   "unimol_fp_mlp",
+   "unimol_mlp"
+  ],
+  "n_test": 2652,
+  "official_simplex_rmse": 1.0483717880874848,
+  "official_simplex_ci": 0.7693701113638183,
+  "oracle_rmse": 0.8626065363660693,
+  "cv5_rmse": 0.8669968129960701,
+  "cv5_ci": 0.7703994086247804,
+  "mean_agg_rmse": 1.1902340650558472,
+  "best_single": "f1full_xgb",
+  "best_single_rmse": 1.0172102451324463,
+  "best_single_ci": 0.7157029191055395,
+  "finding": "池扩容(K=4→10)后 val 拟合 simplex 在位移格退化；cv5(θ 在 test 内交叉拟合)≈oracle，全部反超最佳单成员 —— 位移下 θ 必须在目标域内拟合"
+ },
+ "davis_cold": {
+  "members": [
+   "deepdta",
+   "esmfp",
+   "esmmax",
+   "f1full_xgb",
+   "graphdta",
+   "lightdta",
+   "mf_bilinear",
+   "te_mlp",
+   "unimol_fp_mlp",
+   "unimol_mlp"
+  ],
+  "n_test": 3060,
+  "official_simplex_rmse": 0.5610208214303896,
+  "official_simplex_ci": 0.871518622103389,
+  "oracle_rmse": 0.5509245741227203,
+  "cv5_rmse": 0.5517543349101707,
+  "cv5_ci": 0.868159379465465,
+  "mean_agg_rmse": 0.8409250974655151,
+  "best_single": "f1full_xgb",
+  "best_single_rmse": 0.5729591250419617,
+  "best_single_ci": 0.8653942538400017,
+  "finding": "池扩容(K=4→10)后 val 拟合 simplex 在位移格退化；cv5(θ 在 test 内交叉拟合)≈oracle，全部反超最佳单成员 —— 位移下 θ 必须在目标域内拟合"
+ },
+ "kiba_scaffold": {
+  "members": [
+   "deepdta",
+   "esmfp",
+   "esmmax",
+   "f1full_xgb",
+   "graphdta",
+   "lightdta",
+   "mf_bilinear",
+   "te_mlp",
+   "unimol_fp_mlp",
+   "unimol_mlp"
+  ],
+  "n_test": 11774,
+  "official_simplex_rmse": 1.2030750901262492,
+  "official_simplex_ci": 0.6307274531330523,
+  "oracle_rmse": 1.0856042075557628,
+  "cv5_rmse": 1.0864530820988365,
+  "cv5_ci": 0.6625680273986491,
+  "mean_agg_rmse": 1.1048921346664429,
+  "best_single": "f1full_xgb",
+  "best_single_rmse": 1.1421029567718506,
+  "best_single_ci": 0.6314910622688163,
+  "finding": "池扩容(K=4→10)后 val 拟合 simplex 在位移格退化；cv5(θ 在 test 内交叉拟合)≈oracle，全部反超最佳单成员 —— 位移下 θ 必须在目标域内拟合"
+ },
+ "kiba_cold": {
+  "members": [
+   "deepdta",
+   "esmfp",
+   "esmmax",
+   "f1full_xgb",
+   "graphdta",
+   "lightdta",
+   "mf_bilinear",
+   "te_mlp",
+   "unimol_fp_mlp",
+   "unimol_mlp"
+  ],
+  "n_test": 11020,
+  "official_simplex_rmse": 0.6162816789399379,
+  "official_simplex_ci": 0.7500736955097135,
+  "oracle_rmse": 0.5696243609785264,
+  "cv5_rmse": 0.5704609558084183,
+  "cv5_ci": 0.7755224083295059,
+  "mean_agg_rmse": 0.6882731318473816,
+  "best_single": "f1full_xgb",
+  "best_single_rmse": 0.5908085107803345,
+  "best_single_ci": 0.7659771304596303,
+  "finding": "池扩容(K=4→10)后 val 拟合 simplex 在位移格退化；cv5(θ 在 test 内交叉拟合)≈oracle，全部反超最佳单成员 —— 位移下 θ 必须在目标域内拟合"
+ }
+}

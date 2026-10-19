@@ -1,0 +1,156 @@
+[
+ {
+  "cell": "chembl_temporal",
+  "K": 10,
+  "floor": null,
+  "cens_frac": 0.0,
+  "deployed": 1.1435077387948098,
+  "cats": NaN,
+  "gated": 1.1435077387948098,
+  "gate_used": false,
+  "delta": 0.0
+ },
+ {
+  "cell": "chembl_random",
+  "K": 5,
+  "floor": null,
+  "cens_frac": 0.0,
+  "deployed": 0.7606756058545745,
+  "cats": NaN,
+  "gated": 0.7606756058545745,
+  "gate_used": false,
+  "delta": 0.0
+ },
+ {
+  "cell": "chembl_scaffold",
+  "K": 3,
+  "floor": null,
+  "cens_frac": 0.0,
+  "deployed": 0.8926697949649994,
+  "cats": NaN,
+  "gated": 0.8926697949649994,
+  "gate_used": false,
+  "delta": 0.0
+ },
+ {
+  "cell": "chembl_cold",
+  "K": 3,
+  "floor": null,
+  "cens_frac": 0.0,
+  "deployed": 1.1385599178945829,
+  "cats": NaN,
+  "gated": 1.1385599178945829,
+  "gate_used": false,
+  "delta": 0.0
+ },
+ {
+  "cell": "bindingdb_temporal",
+  "K": 3,
+  "floor": null,
+  "cens_frac": 0.0,
+  "deployed": 1.2654278497001772,
+  "cats": NaN,
+  "gated": 1.2654278497001772,
+  "gate_used": false,
+  "delta": 0.0
+ },
+ {
+  "cell": "bindingdb_random",
+  "K": 3,
+  "floor": null,
+  "cens_frac": 0.0,
+  "deployed": 0.7471989821366212,
+  "cats": NaN,
+  "gated": 0.7471989821366212,
+  "gate_used": false,
+  "delta": 0.0
+ },
+ {
+  "cell": "bindingdb_scaffold",
+  "K": 3,
+  "floor": null,
+  "cens_frac": 0.0,
+  "deployed": 0.8957026039312447,
+  "cats": NaN,
+  "gated": 0.8957026039312447,
+  "gate_used": false,
+  "delta": 0.0
+ },
+ {
+  "cell": "bindingdb_cold",
+  "K": 3,
+  "floor": null,
+  "cens_frac": 0.0,
+  "deployed": 1.2840105531376917,
+  "cats": NaN,
+  "gated": 1.2840105531376917,
+  "gate_used": false,
+  "delta": 0.0
+ },
+ {
+  "cell": "davis_official",
+  "K": 6,
+  "floor": 5.0,
+  "cens_frac": 0.6920926517571885,
+  "deployed": 0.500863039012088,
+  "cats": 0.5025500670421815,
+  "gated": 0.5025500670421815,
+  "gate_used": true,
+  "delta": 0.0016870280300935736
+ },
+ {
+  "cell": "davis_scaffold",
+  "K": 10,
+  "floor": 5.0,
+  "cens_frac": 0.7265675500969618,
+  "deployed": 1.0483717880874848,
+  "cats": 2.3931034700013476,
+  "gated": 2.3931034700013476,
+  "gate_used": true,
+  "delta": 1.3447316819138628
+ },
+ {
+  "cell": "davis_cold",
+  "K": 10,
+  "floor": 5.0,
+  "cens_frac": 0.6985294117647058,
+  "deployed": 0.5610208214303896,
+  "cats": 0.6584778657370226,
+  "gated": 0.6584778657370226,
+  "gate_used": true,
+  "delta": 0.09745704430663304
+ },
+ {
+  "cell": "kiba_official",
+  "K": 10,
+  "floor": 11.2,
+  "cens_frac": 0.12248832961234017,
+  "deployed": 0.41525308851658205,
+  "cats": 0.41440095358106727,
+  "gated": 0.41525308851658205,
+  "gate_used": false,
+  "delta": 0.0
+ },
+ {
+  "cell": "kiba_scaffold",
+  "K": 10,
+  "floor": 11.5,
+  "cens_frac": 0.11027801179443976,
+  "deployed": 1.2030750901262492,
+  "cats": 2.3932025307898326,
+  "gated": 1.2030750901262492,
+  "gate_used": false,
+  "delta": 0.0
+ },
+ {
+  "cell": "kiba_cold",
+  "K": 10,
+  "floor": 11.2,
+  "cens_frac": 0.17257021523019014,
+  "deployed": 0.6162816789399379,
+  "cats": 0.6122039366721702,
+  "gated": 0.6162816789399379,
+  "gate_used": false,
+  "delta": 0.0
+ }
+]

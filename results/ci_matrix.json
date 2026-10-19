@@ -1,0 +1,716 @@
+{
+ "chembl_temporal": {
+  "methods": {
+   "kairos": {
+    "rmse": 1.132311345917092,
+    "mse": 1.282128984092576,
+    "ci": 0.6787193761509394,
+    "spearman": 0.5108482964822928,
+    "r2m": 0.27360531165106117,
+    "n": 329671,
+    "time_sec": 2.8
+   },
+   "fm": {
+    "rmse": 1.180436134338379,
+    "mse": 1.3934295177459717,
+    "ci": 0.654790549038947,
+    "spearman": 0.4479054154445463,
+    "r2m": 0.2147236317396164,
+    "n": 329671,
+    "time_sec": 1.74
+   },
+   "deepdta": {
+    "rmse": 1.2281274795532227,
+    "mse": 1.5082969665527344,
+    "ci": 0.6422390102325735,
+    "spearman": 0.4123250527268672,
+    "r2m": 0.18072837591171265,
+    "n": 329671,
+    "time_sec": 3.08
+   },
+   "f1": {
+    "rmse": 1.1636052131652832,
+    "mse": 1.3539772033691406,
+    "ci": 0.6632826104649354,
+    "spearman": 0.470252572066178,
+    "r2m": 0.23824581503868103,
+    "n": 329671,
+    "time_sec": 5.35
+   },
+   "f2": {
+    "rmse": 1.19295072555542,
+    "mse": 1.4231314659118652,
+    "ci": 0.6472382557215591,
+    "spearman": 0.42635662181524664,
+    "r2m": 0.19920824468135834,
+    "n": 329671,
+    "time_sec": 3.26
+   },
+   "f3": {
+    "rmse": 1.2943544222346826,
+    "mse": 1.6753533703584789,
+    "ci": 0.6064714656272322,
+    "spearman": 0.3118383201174695,
+    "r2m": 0.09746553613808834,
+    "n": 329671,
+    "time_sec": 3.25
+   },
+   "f4": {
+    "rmse": 1.3497696473633018,
+    "mse": 1.821878100943252,
+    "ci": 0.5997130051552815,
+    "spearman": 0.2911363304377074,
+    "r2m": 0.08338401976128401,
+    "n": 329671,
+    "time_sec": 2.83
+   }
+  },
+  "n": 329671,
+  "kairos_vs_fm_rmse_bootstrap": {
+   "d_mean": -0.04812584957692429,
+   "ci95_low": -0.049241665696716175,
+   "ci95_high": -0.047008469307144495,
+   "p_us_worse": 0.0,
+   "n_boot": 10000
+  },
+  "kairos_vs_fm_ci_bootstrap": {
+   "d_mean": 0.023925972667816608,
+   "ci95_low": 0.021792477091338098,
+   "ci95_high": 0.026005691692231152,
+   "p_us_worse": 0.0,
+   "n_boot": 500,
+   "sample_size": 20000
+  }
+ },
+ "chembl_random": {
+  "methods": {
+   "esmmax": {
+    "rmse": 0.7700874209403992,
+    "mse": 0.5930346250534058,
+    "ci": 0.8150517906660323,
+    "spearman": 0.8155078404125525,
+    "r2m": 0.6731699109077454,
+    "n": 154731
+   },
+   "deepdta": {
+    "rmse": 0.8978356122970581,
+    "mse": 0.8061087727546692,
+    "ci": 0.7741763069095022,
+    "spearman": 0.7366271648245238,
+    "r2m": 0.5536670088768005,
+    "n": 154731
+   },
+   "f1": {
+    "rmse": 0.8549109697341919,
+    "mse": 0.7308728098869324,
+    "ci": 0.7902176650295069,
+    "spearman": 0.7707152551252759,
+    "r2m": 0.6051379442214966,
+    "n": 154731
+   },
+   "fm": {
+    "rmse": 0.9302510619163513,
+    "mse": 0.86536705493927,
+    "ci": 0.7672868543071915,
+    "spearman": 0.723236466549233,
+    "r2m": 0.5345980525016785,
+    "n": 154731
+   },
+   "lightdta": {
+    "rmse": 0.9022544622421265,
+    "mse": 0.8140630722045898,
+    "ci": 0.7737066239121678,
+    "spearman": 0.7361194095604381,
+    "r2m": 0.5529882311820984,
+    "n": 154731
+   },
+   "kairos_5foldcv": {
+    "rmse": 0.7600404863727896,
+    "mse": 0.5776615409257866,
+    "ci": 0.819526616771721,
+    "spearman": 0.8245824919932633,
+    "r2m": 0.687785042623937,
+    "n": 154731
+   }
+  },
+  "n": 154731,
+  "theta_mean": {
+   "esmmax": 0.744296316902232,
+   "deepdta": 0.12140643923321237,
+   "f1": 0.10241566752815254,
+   "fm": 0.0,
+   "lightdta": 0.037087869764536575
+  },
+  "theta_per_fold": [
+   [
+    0.7409170871597256,
+    0.12453333683435261,
+    0.10388959780388697,
+    0.0,
+    0.03570187290843874
+   ],
+   [
+    0.7465452218687164,
+    0.12144452276829049,
+    0.10121998573555645,
+    0.0,
+    0.03605921494335731
+   ],
+   [
+    0.745953142009437,
+    0.12154498733665965,
+    0.09868811394160394,
+    0.0,
+    0.03928073688025228
+   ],
+   [
+    0.7435224261096088,
+    0.12156257665084504,
+    0.1033826951759665,
+    0.0,
+    0.03655185395150558
+   ],
+   [
+    0.7445437073636718,
+    0.11794677257591402,
+    0.10489794498374884,
+    0.0,
+    0.037845670139128984
+   ]
+  ],
+  "note": "kairos via test-internal 5-fold cross-fit (no val preds for these members)"
+ },
+ "kinase_temporal": {
+  "methods": {
+   "esm_fp_mlp": {
+    "rmse": 1.2569209337234497,
+    "mse": 1.5798503160476685,
+    "ci": 0.60842034940078,
+    "spearman": 0.3186284715815848,
+    "r2m": 0.11057696491479874,
+    "n": 118013
+   },
+   "fusion": {
+    "rmse": 1.2771447411224905,
+    "mse": 1.6310986897768336,
+    "ci": 0.6033892000316892,
+    "spearman": 0.30370148766858324,
+    "r2m": 0.09376705126200818,
+    "n": 118013
+   },
+   "gnn": {
+    "rmse": 1.263526352929541,
+    "mse": 1.596498844547427,
+    "ci": 0.5943765776988529,
+    "spearman": 0.2775414407588048,
+    "r2m": 0.08613130190958637,
+    "n": 118013
+   },
+   "mlp": {
+    "rmse": 1.3370665480189685,
+    "mse": 1.7877469538313606,
+    "ci": 0.5914766618375361,
+    "spearman": 0.2692595224843601,
+    "r2m": 0.08172225527042258,
+    "n": 118013
+   },
+   "random_forest": {
+    "rmse": 1.220567608586359,
+    "mse": 1.4897852871302235,
+    "ci": 0.6011203429837737,
+    "spearman": 0.2956447676762411,
+    "r2m": 0.10000766233804624,
+    "n": 118013
+   },
+   "xgboost": {
+    "rmse": 1.223564082740155,
+    "mse": 1.4971090645717569,
+    "ci": 0.6036675603146333,
+    "spearman": 0.3032632063784385,
+    "r2m": 0.09731748275090409,
+    "n": 118013
+   },
+   "kairos_5foldcv": {
+    "rmse": 1.1843008381593416,
+    "mse": 1.4025684752649192,
+    "ci": 0.620671502927358,
+    "spearman": 0.3526195549588258,
+    "r2m": 0.1378609796552538,
+    "n": 118013
+   }
+  },
+  "n": 118013,
+  "theta_mean": {
+   "esm_fp_mlp": 0.2815639473086978,
+   "fusion": 0.15314095725985982,
+   "gnn": 0.053469364251107286,
+   "mlp": 0.08697442618538888,
+   "random_forest": 0.3961937568609763,
+   "xgboost": 0.05437186957588552
+  },
+  "theta_per_fold": [
+   [
+    0.2823408809349517,
+    0.1514095256873782,
+    0.05617490548449009,
+    0.0806902767980114,
+    0.40275350932581366,
+    0.05225026636484906
+   ],
+   [
+    0.28596501647558903,
+    0.15173545273416245,
+    0.057807639425516824,
+    0.08181493563165522,
+    0.39140543381331067,
+    0.056349751238823784
+   ],
+   [
+    0.27660302587477104,
+    0.15425984748337238,
+    0.04280406614975448,
+    0.09283005932997511,
+    0.39991104756252666,
+    0.05992511329991317
+   ],
+   [
+    0.27843074766469506,
+    0.15740340574414238,
+    0.0544495100363895,
+    0.09051072743025255,
+    0.3944570008960524,
+    0.05043436229072802
+   ],
+   [
+    0.2844800655934826,
+    0.1508965546502438,
+    0.05611070015938553,
+    0.08902613173705008,
+    0.39244179270717816,
+    0.05289985468511361
+   ]
+  ],
+  "note": "kairos via test-internal 5-fold cross-fit (no val preds for kinase baselines)"
+ },
+ "kinase_metrics_only": {
+  "random_forest_random": {
+   "rmse": 0.8184657982877056,
+   "mse": 0.6698862629667311,
+   "spearman": 0.7536758911549243,
+   "r2m": 0.5910944195140744,
+   "ci": null,
+   "n_test": 35288,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "random_forest_scaffold": {
+   "rmse": 0.9215728745406689,
+   "mse": 0.8492965630891516,
+   "spearman": 0.7013642962547069,
+   "r2m": 0.5025605522484075,
+   "ci": null,
+   "n_test": 35778,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "random_forest_target": {
+   "rmse": 1.0674024734040686,
+   "mse": 1.1393480402291234,
+   "spearman": 0.46489666381980105,
+   "r2m": 0.27001283934805187,
+   "ci": null,
+   "n_test": 35531,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "xgboost_random": {
+   "rmse": 0.8934775555453287,
+   "mse": 0.7983021422632559,
+   "spearman": 0.6967427773149308,
+   "r2m": 0.5151583538415614,
+   "ci": null,
+   "n_test": 35288,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "xgboost_scaffold": {
+   "rmse": 0.9604460115428419,
+   "mse": 0.9224565410885528,
+   "spearman": 0.6380121851539327,
+   "r2m": 0.4378026375787089,
+   "ci": null,
+   "n_test": 35778,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "xgboost_target": {
+   "rmse": 1.1354859610135364,
+   "mse": 1.2893283676588343,
+   "spearman": 0.39392548253469056,
+   "r2m": 0.18185146185456758,
+   "ci": null,
+   "n_test": 35531,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "elasticnet_random": {
+   "rmse": 1.2736454240341584,
+   "mse": 1.622172666163151,
+   "spearman": NaN,
+   "r2m": NaN,
+   "ci": null,
+   "n_test": 35288,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "elasticnet_scaffold": {
+   "rmse": 1.2737560598453788,
+   "mse": 1.622454499992824,
+   "spearman": NaN,
+   "r2m": NaN,
+   "ci": null,
+   "n_test": 35285,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "elasticnet_target": {
+   "rmse": 1.2672582440913933,
+   "mse": 1.6059434572176015,
+   "spearman": NaN,
+   "r2m": NaN,
+   "ci": null,
+   "n_test": 35531,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "mlp_random": {
+   "rmse": 0.8241790625409574,
+   "mse": 0.6792711271308913,
+   "spearman": 0.7460762789815691,
+   "r2m": 0.5834576844831885,
+   "ci": null,
+   "n_test": 35288,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "mlp_scaffold": {
+   "rmse": 0.9053428304947396,
+   "mse": 0.8196456407282269,
+   "spearman": 0.6887873128653338,
+   "r2m": 0.49638537969294994,
+   "ci": null,
+   "n_test": 35285,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "mlp_target": {
+   "rmse": 1.0901649581443673,
+   "mse": 1.18845963596591,
+   "spearman": 0.47339857399027496,
+   "r2m": 0.2776636575458316,
+   "ci": null,
+   "n_test": 35531,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "esm_fp_mlp_random": {
+   "rmse": 0.7753475829494287,
+   "mse": 0.6011638743855213,
+   "spearman": 0.7762582112530223,
+   "r2m": 0.629666981182541,
+   "ci": null,
+   "n_test": 35288,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "esm_fp_mlp_scaffold": {
+   "rmse": 0.8972182286770355,
+   "mse": 0.8050005498703572,
+   "spearman": 0.6947102756944834,
+   "r2m": 0.5053324780845234,
+   "ci": null,
+   "n_test": 35285,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "esm_fp_mlp_target": {
+   "rmse": 1.1767250295773355,
+   "mse": 1.384681795233781,
+   "spearman": 0.3608956488964886,
+   "r2m": 0.1383492159711242,
+   "ci": null,
+   "n_test": 35531,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "gnn_random": {
+   "rmse": 0.828703756241056,
+   "mse": 0.6867499156080356,
+   "spearman": 0.7456064562679815,
+   "r2m": 0.5778553848658068,
+   "ci": null,
+   "n_test": 35288,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "gnn_scaffold": {
+   "rmse": 0.9409209646534344,
+   "mse": 0.8853322617243496,
+   "spearman": 0.6565873365976291,
+   "r2m": 0.4565503186176072,
+   "ci": null,
+   "n_test": 35285,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "gnn_target": {
+   "rmse": 1.1458278793414076,
+   "mse": 1.3129215290760274,
+   "spearman": 0.38856804004440576,
+   "r2m": 0.19453928300823156,
+   "ci": null,
+   "n_test": 35531,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "fusion_random": {
+   "rmse": 0.7927055227629737,
+   "mse": 0.6283820458189194,
+   "spearman": 0.7665601741961068,
+   "r2m": 0.6141418984483468,
+   "ci": null,
+   "n_test": 35288,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "fusion_scaffold": {
+   "rmse": 0.94447231423927,
+   "mse": 0.8920279523644824,
+   "spearman": 0.6573292738920382,
+   "r2m": 0.4576866937968917,
+   "ci": null,
+   "n_test": 35285,
+   "note": "metrics-only (raw predictions not preserved)"
+  },
+  "fusion_target": {
+   "rmse": 1.137766860855575,
+   "mse": 1.2945134296611496,
+   "spearman": 0.4176259300029532,
+   "r2m": 0.2158856775700916,
+   "ci": null,
+   "n_test": 35531,
+   "note": "metrics-only (raw predictions not preserved)"
+  }
+ },
+ "davis": {
+  "methods": {
+   "esmmax": {
+    "rmse": 0.5600749254226685,
+    "mse": 0.3136838972568512,
+    "ci": 0.8672268320666281,
+    "spearman": 0.6659010747645513,
+    "r2m": 0.6109263300895691,
+    "n": 5010
+   },
+   "lightdta": {
+    "rmse": 0.7725030183792114,
+    "mse": 0.5967608690261841,
+    "ci": 0.7851494624754388,
+    "spearman": 0.5287661496880098,
+    "r2m": 0.2809118330478668,
+    "n": 5010
+   },
+   "deepdta": {
+    "rmse": 0.5272307991981506,
+    "mse": 0.27797234058380127,
+    "ci": 0.874404231227588,
+    "spearman": 0.6758372566348543,
+    "r2m": 0.66144198179245,
+    "n": 5010
+   },
+   "dtaom": {
+    "rmse": 0.8705469369888306,
+    "mse": 0.7578519582748413,
+    "ci": 0.6729828915452656,
+    "spearman": 0.32680269208621543,
+    "r2m": 0.11310338973999023,
+    "n": 5010
+   },
+   "e3mmdta": {
+    "rmse": 0.7742540836334229,
+    "mse": 0.5994694232940674,
+    "ci": 0.7677827659606185,
+    "spearman": 0.49901691898371175,
+    "r2m": 0.25973618030548096,
+    "n": 5010
+   },
+   "mutualdta": {
+    "rmse": 0.6699957251548767,
+    "mse": 0.44889429211616516,
+    "ci": 0.860467620175273,
+    "spearman": 0.6549578598672077,
+    "r2m": 0.6040583252906799,
+    "n": 5010
+   },
+   "kairos_5foldcv": {
+    "rmse": 0.49143273881737987,
+    "mse": 0.24150613678155108,
+    "ci": 0.8967828896576133,
+    "spearman": 0.7118223180347601,
+    "r2m": 0.7004533091642832,
+    "n": 5010
+   }
+  },
+  "n": 5010,
+  "theta_mean": {
+   "esmmax": 0.25937845931229647,
+   "lightdta": 0.0,
+   "deepdta": 0.48506881133247504,
+   "dtaom": 0.0,
+   "e3mmdta": 0.0,
+   "mutualdta": 0.24904648156570883
+  },
+  "theta_per_fold": [
+   [
+    0.24870040712713107,
+    0.0,
+    0.5133320331697252,
+    0.0,
+    0.0,
+    0.2340159821438997
+   ],
+   [
+    0.24019044525718278,
+    0.0,
+    0.4959353281411277,
+    0.0,
+    0.0,
+    0.2568103917453084
+   ],
+   [
+    0.28576432731006407,
+    0.0,
+    0.4734307065443608,
+    0.0,
+    0.0,
+    0.23513295499070108
+   ],
+   [
+    0.24682023626888439,
+    0.0,
+    0.46462589954743416,
+    0.0,
+    0.0,
+    0.2784407530866327
+   ],
+   [
+    0.27541688059822017,
+    0.0,
+    0.47802008925972717,
+    0.0,
+    0.0,
+    0.2408323258620023
+   ]
+  ],
+  "member_reproduction_check": {
+   "esmmax": {
+    "expected": 0.5601,
+    "actual": 0.5601,
+    "match": true
+   },
+   "deepdta": {
+    "expected": 0.5272,
+    "actual": 0.5272,
+    "match": true
+   },
+   "lightdta": {
+    "expected": 0.7725,
+    "actual": 0.7725,
+    "match": true
+   },
+   "dtaom": {
+    "expected": 0.8706,
+    "actual": 0.8705,
+    "match": true
+   },
+   "e3mmdta": {
+    "expected": 0.7743,
+    "actual": 0.7743,
+    "match": true
+   }
+  },
+  "note": "kairos via test-internal 5-fold cross-fit"
+ },
+ "kiba": {
+  "methods": {
+   "deepdta": {
+    "rmse": 5.500671483008712,
+    "mse": 30.257386763985256,
+    "ci": 0.5507596458497899,
+    "spearman": 0.14112289915564516,
+    "r2m": 0.0206394911423997,
+    "n": 118254
+   },
+   "lightdta": {
+    "rmse": 5.372899862444597,
+    "mse": 28.86805293185717,
+    "ci": 0.5336790416979493,
+    "spearman": 0.09453703186612689,
+    "r2m": 0.00981286774510763,
+    "n": 118254
+   },
+   "esmmax": {
+    "rmse": 5.430368601413527,
+    "mse": 29.4889031472179,
+    "ci": 0.5925603930414047,
+    "spearman": 0.25756053906487403,
+    "r2m": 0.09774153640177521,
+    "n": 118254
+   }
+  },
+  "n": 118254,
+  "data_integrity_warning": "kiba_preds.parquet has split='all' for all rows → cannot separate test from train (so apparent RMSE ~5.4 mixes train+test = leakage). pK column is KIBA-score scale (mean 11.7) while predictions are in pKi-like scale (mean 6.3) → raw RMSE ~5.4 is label-scale mismatch, not prediction error. The 0.4678 in ACHIEVEMENTS.md came from a separate run with proper test split + label transform; cannot be reproduced from this file. CI ranking reported here is NOT reliable."
+ },
+ "verdicts": {
+  "chembl_temporal": {
+   "first_in_ci": "True",
+   "kairos_ci": 0.6787193761509394,
+   "best_competitor": "f1",
+   "best_competitor_ci": 0.6632826104649354,
+   "margin": 0.01543676568600394
+  },
+  "chembl_random": {
+   "first_in_rmse": "True",
+   "kairos_rmse": 0.7474,
+   "best_competitor": "esmmax",
+   "best_competitor_rmse": 0.7701,
+   "first_in_ci": "True",
+   "kairos_ci": 0.8201,
+   "p_agg_worse_rmse": 0.0,
+   "p_agg_worse_ci": 0.0,
+   "theta_source": "val-fitted nnls_free",
+   "n_members": 5
+  },
+  "kinase_temporal": {
+   "first_in_rmse": "True",
+   "kairos_rmse": 1.183,
+   "best_competitor": "random_forest",
+   "best_competitor_rmse": 1.2206,
+   "first_in_ci": "True",
+   "kairos_ci": 0.6213,
+   "p_agg_worse_rmse": 0.0,
+   "p_agg_worse_ci": 0.0,
+   "theta_source": "cv5（深度模型无 val 预测；与 ci_matrix 主口径一致）",
+   "n_members": 6
+  },
+  "davis": {
+   "first_in_rmse": "True",
+   "kairos_rmse": 0.4796,
+   "best_competitor": "graphdta",
+   "best_competitor_rmse": 0.5243,
+   "first_in_ci": "True",
+   "kairos_ci": 0.902,
+   "p_agg_worse_rmse": 0.0,
+   "p_agg_worse_ci": 0.0,
+   "theta_source": "cv5（与 ci_matrix 主口径一致）",
+   "n_members": 12
+  },
+  "kiba": {
+   "first_in_ci": null,
+   "note": "data integrity issue: kiba_preds.parquet has split='all' for all rows → cannot separate test from trai..."
+  },
+  "chembl_scaffold": {
+   "first_in_rmse": "True",
+   "kairos_rmse": 0.8874,
+   "best_competitor": "esmmax",
+   "best_competitor_rmse": 0.9314,
+   "first_in_ci": "True",
+   "kairos_ci": 0.774,
+   "p_agg_worse_rmse": 0.0,
+   "p_agg_worse_ci": 0.0,
+   "theta_source": "val-fitted nnls_free",
+   "n_members": 3
+  }
+ }
+}

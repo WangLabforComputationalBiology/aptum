@@ -1,0 +1,148 @@
+{
+ "chembl_random": {
+  "members": [
+   "deepdta",
+   "esmmax",
+   "f1",
+   "fm",
+   "lightdta"
+  ],
+  "n_test": 154731,
+  "best_single": "esmmax",
+  "best_single_rmse": 0.7700874463466382,
+  "agg_rmse": 0.7473946958683781,
+  "agg_ci": 0.8200640284259095,
+  "theta_source": "val-fitted nnls_free",
+  "bootstrap": {
+   "rmse_gain_of_agg": {
+    "mean": 0.022717142306253487,
+    "ci95": [
+     0.021814477566142194,
+     0.023686994963768655
+    ],
+    "p_agg_worse": 0.0,
+    "n_boot": 1000
+   },
+   "ci_gain_of_agg": {
+    "mean": 0.005015277521402189,
+    "ci95": [
+     0.004745918753684663,
+     0.0052840365365911385
+    ],
+    "p_agg_worse": 0.0,
+    "n_boot": 1000
+   }
+  }
+ },
+ "chembl_scaffold": {
+  "members": [
+   "deepdta",
+   "esmmax",
+   "lightdta"
+  ],
+  "n_test": 154728,
+  "best_single": "esmmax",
+  "best_single_rmse": 0.9313906871412074,
+  "agg_rmse": 0.8874157988437152,
+  "agg_ci": 0.7739602381749204,
+  "theta_source": "val-fitted nnls_free",
+  "bootstrap": {
+   "rmse_gain_of_agg": {
+    "mean": 0.04396585009728489,
+    "ci95": [
+     0.04254416068736563,
+     0.04533823602894527
+    ],
+    "p_agg_worse": 0.0,
+    "n_boot": 1000
+   },
+   "ci_gain_of_agg": {
+    "mean": 0.011090361007335289,
+    "ci95": [
+     0.010603101383094263,
+     0.011516719522844578
+    ],
+    "p_agg_worse": 0.0,
+    "n_boot": 1000
+   }
+  }
+ },
+ "kinase_temporal": {
+  "members": [
+   "esm_fp_mlp",
+   "fusion",
+   "gnn",
+   "mlp",
+   "random_forest",
+   "xgboost"
+  ],
+  "n_test": 118013,
+  "best_single": "random_forest",
+  "best_single_rmse": 1.2205675930700557,
+  "agg_rmse": 1.1830453126439744,
+  "agg_ci": 0.6212630566585664,
+  "theta_source": "cv5（深度模型无 val 预测；与 ci_matrix 主口径一致）",
+  "bootstrap": {
+   "rmse_gain_of_agg": {
+    "mean": 0.037480310289446817,
+    "ci95": [
+     0.03572001838039455,
+     0.03905343924006911
+    ],
+    "p_agg_worse": 0.0,
+    "n_boot": 1000
+   },
+   "ci_gain_of_agg": {
+    "mean": 0.020140268622835075,
+    "ci95": [
+     0.01887338523898825,
+     0.02126162923425015
+    ],
+    "p_agg_worse": 0.0,
+    "n_boot": 1000
+   }
+  }
+ },
+ "davis_random": {
+  "members": [
+   "esmmax",
+   "lightdta",
+   "deepdta",
+   "dtaom",
+   "e3mmdta",
+   "mutualdta",
+   "f1full_xgb",
+   "graphdta",
+   "mf_bilinear",
+   "te_mlp",
+   "unimol_fp_mlp",
+   "unimol_mlp"
+  ],
+  "n_test": 5010,
+  "best_single": "graphdta",
+  "best_single_rmse": 0.5242519411667156,
+  "agg_rmse": 0.47964719221232316,
+  "agg_ci": 0.9020323816784704,
+  "theta_source": "cv5（与 ci_matrix 主口径一致）",
+  "bootstrap": {
+   "rmse_gain_of_agg": {
+    "mean": 0.044810631053898126,
+    "ci95": [
+     0.03577435359726531,
+     0.05413246753446614
+    ],
+    "p_agg_worse": 0.0,
+    "n_boot": 1000
+   },
+   "ci_gain_of_agg": {
+    "mean": 0.03393121161294414,
+    "ci95": [
+     0.02825821510652237,
+     0.03973900119638835
+    ],
+    "p_agg_worse": 0.0,
+    "n_boot": 1000
+   }
+  }
+ }
+}

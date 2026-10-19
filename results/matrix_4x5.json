@@ -1,0 +1,680 @@
+{
+ "rows": [
+  {
+   "dataset": "ChEMBL 战场",
+   "protocol": "时间",
+   "status": "DONE",
+   "ours": {
+    "rmse": 1.132311345917092,
+    "ci": 0.6787193761509394,
+    "n": 329671
+   },
+   "opponent": {
+    "name": "f1",
+    "rmse": 1.1636052131652832,
+    "ci": 0.6632826104649354
+   },
+   "verdict": {
+    "rmse": "第一",
+    "ci": "第一"
+   },
+   "p_agg_worse": null,
+   "leakage": "时间轴：train ≤ 2018 训练，test 2019+；无跨期同对泄漏",
+   "published": "同生态 ChEMBL 无公开时间轴榜；对手为我们在同划分重训的最强方法",
+   "theta": null,
+   "caliber": null,
+   "alternates": null,
+   "extra": null
+  },
+  {
+   "dataset": "ChEMBL 战场",
+   "protocol": "随机",
+   "status": "DONE",
+   "ours": {
+    "rmse": 0.7473946958683781,
+    "ci": 0.8200640284259095,
+    "n": 154731
+   },
+   "opponent": {
+    "name": "esmmax",
+    "rmse": 0.7700874463466382,
+    "ci": 0.8150517906660323
+   },
+   "verdict": {
+    "rmse": "第一",
+    "ci": "第一"
+   },
+   "p_agg_worse": null,
+   "leakage": "行级随机 → 泄漏严重：分子重叠 59.1%，(分子,靶点) 对重叠 23.7%",
+   "published": "公开随机榜（Davis/KIBA 体系）在本数据集无同名对手",
+   "theta": [
+    -1.0686,
+    0.1099,
+    0.7273,
+    0.2309,
+    0.0,
+    0.0903
+   ],
+   "caliber": "shift_d=0.0072 → nnls_free",
+   "alternates": {
+    "nnls_free": 0.7473946958683781,
+    "simplex": 0.7606756058545745,
+    "cv5_test": 0.747397873515009,
+    "oracle": 0.7473730255837423
+   },
+   "extra": null
+  },
+  {
+   "dataset": "ChEMBL 战场",
+   "protocol": "scaffold",
+   "status": "DONE",
+   "ours": {
+    "rmse": 0.8874157988437152,
+    "ci": 0.7739602381749204,
+    "n": 154728
+   },
+   "opponent": {
+    "name": "esmmax",
+    "rmse": 0.9313906871412074,
+    "ci": 0.7628705858932691
+   },
+   "verdict": {
+    "rmse": "第一",
+    "ci": "第一"
+   },
+   "p_agg_worse": null,
+   "leakage": "Murcko 骨架不跨划分；靶点重叠见 json 的 leakage 字段",
+   "published": "ChEMBL 无公开 scaffold 榜；对手=我们在同划分重训的最强方法",
+   "theta": [
+    -0.8257,
+    0.24,
+    0.6092,
+    0.2628
+   ],
+   "caliber": "shift_d=0.0161 → nnls_free",
+   "alternates": {
+    "nnls_free": 0.8874157988437152,
+    "simplex": 0.8926697949649994,
+    "cv5_test": 0.8851661149750468,
+    "oracle": 0.885126399323444
+   },
+   "extra": null
+  },
+  {
+   "dataset": "ChEMBL 战场",
+   "protocol": "冷启动",
+   "status": "DONE",
+   "ours": {
+    "rmse": 1.1385599178945829,
+    "ci": 0.6646460749165769,
+    "n": 175803
+   },
+   "opponent": {
+    "name": "esmmax",
+    "rmse": 1.1746618066933021,
+    "ci": 0.6607516848176809
+   },
+   "verdict": {
+    "rmse": "第一",
+    "ci": "第一"
+   },
+   "p_agg_worse": null,
+   "leakage": "靶点级留出，靶点不跨划分；分子重叠见 json 的 leakage 字段",
+   "published": "ChEMBL 无公开冷启动榜；对手=我们在同划分重训的最强方法",
+   "theta": [
+    0.0672,
+    0.2195,
+    0.5569,
+    0.2236
+   ],
+   "caliber": "shift_d=0.1549 → simplex",
+   "alternates": {
+    "nnls_free": 1.137276189855294,
+    "simplex": 1.1385599178945829,
+    "cv5_test": 1.1335858011782225,
+    "oracle": 1.13353396196287
+   },
+   "extra": null
+  },
+  {
+   "dataset": "BindingDB",
+   "protocol": "时间",
+   "status": "DONE",
+   "ours": {
+    "rmse": 1.2680293210148688,
+    "ci": 0.6297714779674042,
+    "n": 325636
+   },
+   "opponent": {
+    "name": "f1",
+    "rmse": 1.2980497342714499,
+    "ci": 0.6126428509544237
+   },
+   "verdict": {
+    "rmse": "第一",
+    "ci": "第一"
+   },
+   "p_agg_worse": null,
+   "leakage": "时间轴：按 year 划分，train ≤ 2018；无跨期同对泄漏",
+   "published": "BindingDB 无公开同口径榜",
+   "theta": [
+    -0.663,
+    0.3964,
+    0.2026,
+    0.5176
+   ],
+   "caliber": "shift_d=0.0393 → nnls_free",
+   "alternates": {
+    "nnls_free": 1.2680293210148688,
+    "simplex": 1.2654278497001772,
+    "cv5_test": 1.262975353091738,
+    "oracle": 1.262959458999315
+   },
+   "extra": null
+  },
+  {
+   "dataset": "BindingDB",
+   "protocol": "随机",
+   "status": "DONE",
+   "ours": {
+    "rmse": 0.7450406265923839,
+    "ci": 0.8273670714054244,
+    "n": 109816
+   },
+   "opponent": {
+    "name": "esmmax",
+    "rmse": 0.7727712842147632,
+    "ci": 0.8214652522125403
+   },
+   "verdict": {
+    "rmse": "第一",
+    "ci": "第一"
+   },
+   "p_agg_worse": null,
+   "leakage": "行级随机 → (分子,靶点) 对重叠 3.53%，分子重叠 45.75%，靶点重叠 100%",
+   "published": "BindingDB 无公开同口径榜",
+   "theta": [
+    -0.5009,
+    0.2818,
+    0.7079,
+    0.0771
+   ],
+   "caliber": "shift_d=0.0011 → nnls_free",
+   "alternates": {
+    "nnls_free": 0.7450406265923839,
+    "simplex": 0.7471989821366212,
+    "cv5_test": 0.7450189378747781,
+    "oracle": 0.7449956331503419
+   },
+   "extra": null
+  },
+  {
+   "dataset": "BindingDB",
+   "protocol": "scaffold",
+   "status": "DONE",
+   "ours": {
+    "rmse": 0.8841770721456504,
+    "ci": 0.7850387189054329,
+    "n": 109815
+   },
+   "opponent": {
+    "name": "esmmax",
+    "rmse": 0.9255334474713881,
+    "ci": 0.77511737364351
+   },
+   "verdict": {
+    "rmse": "第一",
+    "ci": "第一"
+   },
+   "p_agg_worse": null,
+   "leakage": "Murcko 骨架不跨划分；靶点重叠见 json 的 leakage 字段",
+   "published": "BindingDB 无公开同口径榜",
+   "theta": [
+    -1.2417,
+    0.2683,
+    0.6825,
+    0.2172
+   ],
+   "caliber": "shift_d=0.0566 → nnls_free",
+   "alternates": {
+    "nnls_free": 0.8841770721456504,
+    "simplex": 0.8957026039312447,
+    "cv5_test": 0.8824023351488277,
+    "oracle": 0.882346105513793
+   },
+   "extra": null
+  },
+  {
+   "dataset": "BindingDB",
+   "protocol": "冷启动",
+   "status": "DONE",
+   "ours": {
+    "rmse": 1.2840105531376917,
+    "ci": 0.6454119398846082,
+    "n": 123173
+   },
+   "opponent": {
+    "name": "f1",
+    "rmse": 1.3023723077309997,
+    "ci": 0.6362226600210995
+   },
+   "verdict": {
+    "rmse": "第一",
+    "ci": "第一"
+   },
+   "p_agg_worse": null,
+   "leakage": "靶点级留出，靶点不跨划分；分子重叠见 json 的 leakage 字段",
+   "published": "BindingDB 无公开同口径榜",
+   "theta": [
+    0.1467,
+    0.3415,
+    0.3867,
+    0.2718
+   ],
+   "caliber": "shift_d=0.1249 → simplex",
+   "alternates": {
+    "nnls_free": 1.2931376419366811,
+    "simplex": 1.2840105531376917,
+    "cv5_test": 1.2765733591493376,
+    "oracle": 1.2765104159487344
+   },
+   "extra": null
+  },
+  {
+   "dataset": "Davis",
+   "protocol": "时间",
+   "status": "STRUCTURAL_N/A",
+   "reason": "Davis 无年份字段，时间轴结构上不可做"
+  },
+  {
+   "dataset": "Davis",
+   "protocol": "随机",
+   "status": "DONE",
+   "ours": {
+    "rmse": 0.47964719221232316,
+    "ci": 0.9020323816784704,
+    "n": 5010
+   },
+   "opponent": {
+    "name": "graphdta",
+    "rmse": 0.5242519378662109,
+    "ci": 0.8680838270252421
+   },
+   "verdict": {
+    "rmse": "第一",
+    "ci": "第一"
+   },
+   "p_agg_worse": null,
+   "leakage": "Davis 官方 setting1 单划分（train 25046 / test 5010）",
+   "published": "DeepDTA Davis MSE 0.261 → RMSE≈0.511；MutualDTA 自报 0.443（5-fold 均值）",
+   "theta": null,
+   "caliber": "cv5（旧成员无 val 预测；含 graphdta）",
+   "alternates": null,
+   "extra": null
+  },
+  {
+   "dataset": "Davis",
+   "protocol": "scaffold",
+   "status": "DONE",
+   "ours": {
+    "rmse": 1.0483717880874848,
+    "ci": 0.7693701113638183,
+    "n": 2652
+   },
+   "opponent": {
+    "name": "f1full_xgb",
+    "rmse": 1.0172101617315092,
+    "ci": 0.7157029191055395
+   },
+   "verdict": {
+    "rmse": "落后",
+    "ci": "第一"
+   },
+   "p_agg_worse": null,
+   "leakage": "Murcko 骨架不跨划分；但 Davis 仅 68 个分子 → test 仅 6 个分子，统计功效极低",
+   "published": "Davis 无公开 scaffold 榜",
+   "theta": [
+    1.3984,
+    0.434,
+    0.0,
+    0.0,
+    0.0,
+    0.1067,
+    0.0,
+    0.4594,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "caliber": "shift_d=0.3762 → simplex",
+   "alternates": {
+    "nnls_free": 1.0909048233746115,
+    "simplex": 1.0483717880874848,
+    "cv5_test": 0.8669968129960701,
+    "oracle": 0.8626065363660693
+   },
+   "extra": null
+  },
+  {
+   "dataset": "Davis",
+   "protocol": "冷启动",
+   "status": "DONE",
+   "ours": {
+    "rmse": 0.5563645830114461,
+    "ci": 0.8711732784392763,
+    "n": 3060
+   },
+   "opponent": {
+    "name": "f1full_xgb",
+    "rmse": 0.5729591041052332,
+    "ci": 0.8653942538400017
+   },
+   "verdict": {
+    "rmse": "第一",
+    "ci": "第一"
+   },
+   "p_agg_worse": null,
+   "leakage": "靶点级留出；分子重叠 100%",
+   "published": "Davis 无公开冷启动榜",
+   "theta": [
+    -0.2311,
+    0.0832,
+    0.3298,
+    0.0,
+    0.6291,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "caliber": "shift_d=0.0622 → nnls_free",
+   "alternates": {
+    "nnls_free": 0.5563645830114461,
+    "simplex": 0.5610208214303896,
+    "cv5_test": 0.5517543349101707,
+    "oracle": 0.5509245741227203
+   },
+   "extra": null
+  },
+  {
+   "dataset": "KIBA",
+   "protocol": "时间",
+   "status": "STRUCTURAL_N/A",
+   "reason": "KIBA 无年份字段，时间轴结构上不可做"
+  },
+  {
+   "dataset": "KIBA",
+   "protocol": "随机",
+   "status": "DONE",
+   "ours": {
+    "rmse": 0.4113306248144618,
+    "ci": 0.8627127994835845,
+    "n": 19709
+   },
+   "opponent": {
+    "name": "f1full_xgb",
+    "rmse": 0.452457611673346,
+    "ci": 0.8416151727010228
+   },
+   "verdict": {
+    "rmse": "第一",
+    "ci": "第一"
+   },
+   "p_agg_worse": null,
+   "leakage": "KIBA 官方 setting1 划分，同对不跨划分",
+   "published": "DeepDTA KIBA MSE 0.411 → RMSE≈0.641，CI 0.782（官方 5-fold）",
+   "theta": [
+    -0.8692,
+    0.1363,
+    0.0,
+    0.0,
+    0.3548,
+    0.1948,
+    0.0,
+    0.2602,
+    0.1264,
+    0.0,
+    0.0
+   ],
+   "caliber": "shift_d=0.0217 → nnls_free",
+   "alternates": {
+    "nnls_free": 0.4113306248144618,
+    "simplex": 0.41525308851658205,
+    "cv5_test": 0.4115456971594823,
+    "oracle": 0.4112239431750775
+   },
+   "extra": null
+  },
+  {
+   "dataset": "KIBA",
+   "protocol": "scaffold",
+   "status": "DONE",
+   "ours": {
+    "rmse": 1.2030750901262492,
+    "ci": 0.6307274531330523,
+    "n": 11774
+   },
+   "opponent": {
+    "name": "f1full_xgb",
+    "rmse": 1.1421030226813491,
+    "ci": 0.6314910622688163
+   },
+   "verdict": {
+    "rmse": "落后",
+    "ci": "落后"
+   },
+   "p_agg_worse": null,
+   "leakage": "Murcko 骨架不跨划分",
+   "published": "KIBA 无公开 scaffold 榜",
+   "theta": [
+    0.1059,
+    0.1944,
+    0.0624,
+    0.0742,
+    0.0891,
+    0.4154,
+    0.1288,
+    0.0,
+    0.0357,
+    0.0,
+    0.0
+   ],
+   "caliber": "shift_d=0.2722 → simplex",
+   "alternates": {
+    "nnls_free": 1.2101076228899956,
+    "simplex": 1.2030750901262492,
+    "cv5_test": 1.0864530820988365,
+    "oracle": 1.0856042075557628
+   },
+   "extra": null
+  },
+  {
+   "dataset": "KIBA",
+   "protocol": "冷启动",
+   "status": "DONE",
+   "ours": {
+    "rmse": 0.6162816789399379,
+    "ci": 0.7500736955097135,
+    "n": 11020
+   },
+   "opponent": {
+    "name": "f1full_xgb",
+    "rmse": 0.590808498545174,
+    "ci": 0.7659771304596303
+   },
+   "verdict": {
+    "rmse": "落后",
+    "ci": "落后"
+   },
+   "p_agg_worse": null,
+   "leakage": "靶点级留出；分子重叠 100%",
+   "published": "KIBA 无公开冷启动榜",
+   "theta": [
+    -0.0096,
+    0.0,
+    0.1682,
+    0.2311,
+    0.4109,
+    0.0,
+    0.0199,
+    0.0,
+    0.1699,
+    0.0,
+    0.0
+   ],
+   "caliber": "shift_d=0.1386 → simplex",
+   "alternates": {
+    "nnls_free": 0.6125276549924671,
+    "simplex": 0.6162816789399379,
+    "cv5_test": 0.5704609558084183,
+    "oracle": 0.5696243609785264
+   },
+   "extra": null
+  },
+  {
+   "dataset": "激酶基准",
+   "protocol": "时间",
+   "status": "DONE",
+   "ours": {
+    "rmse": 1.1843008381593416,
+    "ci": 0.620671502927358,
+    "n": 118013
+   },
+   "opponent": {
+    "name": "random_forest",
+    "rmse": 1.220567608586359,
+    "ci": 0.6011203429837737
+   },
+   "verdict": {
+    "rmse": "第一",
+    "ci": "第一"
+   },
+   "p_agg_worse": null,
+   "leakage": "时间轴：train ≤ 2018，test 2019+",
+   "published": "激酶基准论文自报最优 0.777（随机划分口径）",
+   "theta": null,
+   "caliber": null,
+   "alternates": null,
+   "extra": null
+  },
+  {
+   "dataset": "激酶基准",
+   "protocol": "随机",
+   "status": "DONE",
+   "ours": {
+    "rmse": 0.6215103212305099,
+    "ci": 0.8465749489752856,
+    "n": 35788
+   },
+   "opponent": {
+    "name": "esm_fp_mlp",
+    "rmse": 0.6418745604298115,
+    "ci": 0.8415853326793035
+   },
+   "verdict": {
+    "rmse": "第一",
+    "ci": "第一"
+   },
+   "p_agg_worse": 0.0,
+   "leakage": "行级随机 → 泄漏严重（分子、靶点均跨划分重叠）",
+   "published": "激酶亲和力基准论文自报最优 0.777（其自有划分）",
+   "theta": [
+    -1.1692,
+    0.1384,
+    0.6848,
+    0.2923,
+    0.0446,
+    0.0048,
+    0.0,
+    0.0
+   ],
+   "caliber": "shift_d=0.0138 → nnls_free",
+   "alternates": {
+    "cv5_test": 0.6213436206594376,
+    "oracle": 0.6212469221133909
+   },
+   "extra": null
+  },
+  {
+   "dataset": "激酶基准",
+   "protocol": "scaffold",
+   "status": "DONE",
+   "ours": {
+    "rmse": 0.817958445743572,
+    "ci": 0.7861517679391166,
+    "n": 35778
+   },
+   "opponent": {
+    "name": "esm_fp_mlp",
+    "rmse": 0.8511846810643042,
+    "ci": 0.7757900981079267
+   },
+   "verdict": {
+    "rmse": "第一",
+    "ci": "第一"
+   },
+   "p_agg_worse": 0.0,
+   "leakage": "Murcko 骨架分组，骨架不跨划分；靶点重叠 100%（同靶不同骨架）",
+   "published": "激酶亲和力基准论文自报最优 0.777（其自有划分）",
+   "theta": [
+    -387572874342.9297,
+    55444253913.3992,
+    0.5495,
+    0.2716,
+    0.0845,
+    0.0739,
+    0.1031,
+    0.0
+   ],
+   "caliber": "shift_d=0.0447 → nnls_free",
+   "alternates": {
+    "cv5_test": 0.8144253334700619,
+    "oracle": 0.8142900467965838
+   },
+   "extra": null
+  },
+  {
+   "dataset": "激酶基准",
+   "protocol": "冷启动",
+   "status": "DONE",
+   "ours": {
+    "rmse": 1.00738357319168,
+    "ci": 0.7161670291514042,
+    "n": 34325
+   },
+   "opponent": {
+    "name": "random_forest",
+    "rmse": 1.023895167376103,
+    "ci": 0.7062099092376948
+   },
+   "verdict": {
+    "rmse": "第一",
+    "ci": "第一"
+   },
+   "p_agg_worse": 0.0,
+   "leakage": "靶点级留出，靶点不跨划分；分子重叠 100%（同分子不同靶）",
+   "published": "激酶亲和力基准论文自报最优 0.777（其自有划分）",
+   "theta": [
+    0.3037,
+    0.0,
+    0.1578,
+    0.1843,
+    0.2019,
+    0.0581,
+    0.3979,
+    0.0
+   ],
+   "caliber": "shift_d=0.2148 → simplex",
+   "alternates": {
+    "cv5_test": 0.9819860677279822,
+    "oracle": 0.9818697810941709
+   },
+   "extra": null
+  }
+ ],
+ "n_done": 18,
+ "n_first_rmse": 15,
+ "n_first_ci": 16
+}
